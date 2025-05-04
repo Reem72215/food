@@ -19,7 +19,6 @@ function Draw(){
     showPrice.innerHTML = (TotalPrice)+" "+"S.P";
 }
 
-myBtn.onclick = Draw;
 btnPrice.onclick = Draw;
 
 total.innerHTML = foodName + "<br>";
