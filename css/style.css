@@ -1,0 +1,136 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+.Food {
+    margin: 10px 0px;
+}
+
+.title {
+    text-align: center;
+    color: rgb(198, 35, 0);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.title::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    background-color: rgb(198, 35, 0);
+    width: 50px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.title:hover::after{
+    width: 65%;
+}
+
+.Food .boxs {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.Food .boxs .box {
+    width: 23%;
+    text-align: center;
+    box-shadow: 0px 0px 14px 2px rgb(198, 35, 0);
+    padding: 1rem 1.5rem;
+    position: relative;
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+.Food .boxs .box img {
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.Food .boxs .box img:hover{
+    transform: scale(1.20 , 1.20);
+}
+
+.Food .boxs .box h3 {
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(42, 0, 78);
+}
+
+.Food .boxs .box p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Food .boxs .box button {
+    border: 1px solid rgb(198, 35, 0) ;
+    background-color: rgb(42, 0, 78);
+    padding: 8px 12px;
+    color: rgb(198, 35, 0);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 0px;
+    font-size: large;
+}
+
+.Food .boxs .box .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Food .boxs .box .foot i {
+    color:rgb(42, 0, 78);
+    font-size: large;
+}
+
+.Food .boxs .box .foot span {
+    font-size: 20px;
+}
+
+.footer .total {
+    box-shadow: 0px 0px 14px 2px rgb(198, 35, 0);
+    padding: 1rem 1.5rem;
+    width: 50%;
+}
+
+.footer .total p {
+    color: rgb(80, 0, 115);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.footer .total button {
+    border: 1px solid rgb(198, 35, 0) ;
+    background-color: rgb(42, 0, 78);
+    padding: 8px 12px;
+    color: rgb(198, 35, 0);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 0px;
+    font-size: larger;
+}
