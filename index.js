@@ -21,4 +21,4 @@ function Draw(){
 
 btnPrice.onclick = Draw;
 
-total.innerHTML = foodName + "<br>";
+
